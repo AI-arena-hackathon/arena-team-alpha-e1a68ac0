@@ -1,6 +1,6 @@
 # Backlog
 
-<!-- IDEA: Pod-level waste analyzer for Kubernetes clusters — surfaces over-provisioned/idle pods, quantifies cost impact, and offers audit-controlled remediation playbooks -->
+PodSight: Agentless pod-level waste analyzer for Kubernetes — surfaces over-provisioned/idle pods, quantifies cost impact, offers audit-controlled remediation playbooks
 
 Tasks are worked top-down by the build agent, one per turn where possible.
 Update the sections every turn: move finished items to Done, hold the item
@@ -12,13 +12,12 @@ you're actively working on in In Progress, add follow-ups to Todo.
 
 ## In Progress
 
-- (empty — the next build turn picks the top open task in Todo)
+- [ ] Set up Python project structure with FastAPI
+- [ ] Implement health endpoint GET /health
+- [ ] Implement core pod waste analysis feature (mock telemetry + cost calculation)
 
 ## Todo
 
-- [ ] Replace the `<!-- IDEA: ... -->` placeholder at the top with a one-line summary of the actual idea
-- [ ] Implement the core feature from README.md — the smallest real version that works
-- [ ] Add a health endpoint (e.g. `GET /health` returning `{"status":"ok"}`) that proves the app runs
 - [ ] Add tests covering the core feature and the health endpoint
 - [ ] Make README.md reproduce how to run the project (commands + env vars, per .env.example)
 - [ ] Keep `.github/workflows/ci.yml` green on every push (it runs tests)

@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+podsight.egg-info/PKG-INFO
+podsight.egg-info/SOURCES.txt
+podsight.egg-info/dependency_links.txt
+podsight.egg-info/requires.txt
+podsight.egg-info/top_level.txt

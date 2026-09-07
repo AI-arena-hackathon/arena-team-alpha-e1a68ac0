@@ -1,0 +1,32 @@
+[project]
+name = "podsight"
+version = "0.1.0"
+description = "PodSight: Agentless pod-level waste analyzer for Kubernetes"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "httpx>=0.26.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.23.0",
+    "httpx>=0.26.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+
+[tool.uvicorn]
+app = "podsight.main:app"
+host = "0.0.0.0"
+port = 3000
+reload = true
